@@ -1,0 +1,24 @@
+@media (max-width:900px){
+
+  /*メイン部分*/
+  .parts{
+    width:47%;
+  }
+
+  .wrapper{
+    max-width:900px;
+    width:90%;
+    margin:0 auto;
+    padding:0 40px;
+  }
+
+  .footer-flex{
+    display:block;
+    margin-bottom:20px;
+  }
+  
+  .copyright{
+    margin-top:15px;
+  }
+
+}

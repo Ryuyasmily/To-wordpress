@@ -1,0 +1,203 @@
+
+body{
+  font-family:Meiryo;
+  color:#333;
+  font-size:14px;
+}
+
+a{
+  text-decoration: none;
+  color:#333;
+  display: block;
+}
+
+.wrapper{
+  max-width:1360px;
+  width:100%;
+  padding:0 40px;
+  margin:0 auto;
+}
+
+.white{
+  height:400px;
+  background-color: #fff;
+}
+
+/*ヘッダー部分*/
+
+
+#header{
+  display:flex;
+  justify-content:space-between;
+  height:80px;
+  align-items: center;
+}
+
+.company{
+  padding-top:50px;
+}
+
+
+.toggle_btn{
+  width:30px;
+  position:relative;
+  height:30px;
+  cursor:pointer;
+  z-index:20;
+}
+
+.toggle_btn span{
+  width:30px;
+  background-color: #333;
+  height:2px;
+  border-radius:4px;
+  display: block;
+  position:absolute;
+  top:18px;
+  transition:all 0.5s;
+}
+
+.toggle_btn span:nth-child(1){
+  top:10px;
+}
+
+.toggle_btn span:nth-child(2) {
+  bottom: 10px;
+}
+
+.open .toggle_btn span {
+  background-color: #fff;
+}
+
+.open .toggle_btn span:nth-child(1) {
+  -webkit-transform: translateY(4px) rotate(-45deg);
+  transform: translateY(4px) rotate(-45deg);
+}
+
+.open .toggle_btn span:nth-child(2) {
+  -webkit-transform: translateY(-4px) rotate(45deg);
+  transform: translateY(-4px) rotate(45deg);
+}
+
+
+  #navi{
+  position:absolute;
+  top:0;
+  padding:36px 50px;
+  z-index:20;
+  left:-300px;
+  width:300px;
+  color:#fff;
+  opacity:0;
+  transition:all 0.5s;
+  }
+
+  #navi a{
+    color:#fff;
+  }
+  
+  #navi li{
+    margin-bottom:14px;
+  }
+
+  .open #navi{
+    left:0;
+    opacity:1;
+  }
+
+#mask{
+  display: none;
+  transition:all 0.5s;
+}
+
+.open #mask {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .8;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/*メイン部分*/
+
+.main-title{
+  margin:30px 0 30px 0;
+  font-size:14px;
+}
+
+.flex{
+  max-width:800px;
+  width:100%;
+  display: flex;
+  justify-content:space-between;
+}
+
+
+.divide{
+  width:50%;
+}
+
+.text{
+  width:44%;
+  line-height:25px;
+}
+
+.memo{
+  font-size:14px;
+  margin-bottom:20px;
+}
+
+.flex2{
+  display: flex;
+  font-size: 13px;
+}
+
+.mgr{
+  width:30%;
+}
+
+.align{
+  width:70%;
+}
+
+.backbtn{
+  text-align: center;
+  font-size: 14px;
+  margin-top:80px;
+}
+
+.height{
+  height:250px;
+}
+
+
+/*フッター部分*/
+
+.introduce{
+  display: flex;
+  font-size:12px;
+}
+
+.introduce a:hover{
+  opacity:0.7;
+}
+
+.introduce li{
+  margin:0 10px;
+}
+
+.footer-flex{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:20px;
+}
+
+.copyright{
+  font-size:8px;
+  width:120px;
+}
