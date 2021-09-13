@@ -19,9 +19,6 @@ a {
 
 /*ヘッダー部分*/
 
-.site-title {
-  margin-left: 10px;
-}
 
 #header {
   height: 80px;
@@ -42,7 +39,7 @@ a {
 #navi {
   position: absolute;
   top: 0;
-  padding: 36px 60px;
+  margin: 36px 0 0 50px;
   transition: all 0.5s;
   left: -300px;
   color: white;
