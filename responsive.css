@@ -1,24 +1,62 @@
-@media (max-width:900px){
+@media (max-width:900px) {
 
   /*メイン部分*/
-  .parts{
-    width:47%;
+  .parts {
+    width: 47%;
   }
 
-  .wrapper{
-    max-width:900px;
-    width:90%;
-    margin:0 auto;
-    padding:0 40px;
+  .wrapper {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 40px;
   }
 
-  .footer-flex{
-    display:block;
-    margin-bottom:20px;
+  .footer-flex {
+    display: block;
+    margin-bottom: 20px;
   }
-  
-  .copyright{
-    margin-top:15px;
+
+  .copyright {
+    margin-top: 15px;
   }
+
+  #navi {
+    overflow-x: hidden;
+  }
+
+  /*無駄に余白があるので余白を消す*/
+  .wrapper {
+    padding: 0;
+  }
+}
+
+@media (max-width:570px) {
+  .wrapper {
+    width: 80%;
+  }
+
+
+  .flex {
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .divide {
+    object-fit: cover;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .text {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 50px;
+  }
+
+
+
 
 }

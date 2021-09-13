@@ -1,239 +1,242 @@
-.body{
-  font-family:Meiryo;
-  color:#333;
+.body {
+  font-family: Meiryo;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.wrapper {
+  max-width: 1360px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+
+
+/*ヘッダー部分*/
+
+.site-title {
+  margin-left: 10px;
+}
+
+#header {
+  height: 80px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.product {
+  margin: 30px 0 30px 0;
+  font-size: 14px;
+}
+
+/*ハンバーガーメニュー*/
+
+#navi {
+  position: absolute;
+  top: 0;
+  padding: 36px 60px;
+  transition: all 0.5s;
+  left: -300px;
+  color: white;
+  opacity: 0;
+  z-index: 20;
+}
+
+.open #navi {
+  left: 0;
+  opacity: 1;
+}
+
+
+#navi a {
+  color: white;
+}
+
+.open #navi {
+  left: 0;
+  opacity: 1;
+}
+
+#navi li {
+  margin-bottom: 14px;
+}
+
+
+/*ハンバーガーの線*/
+
+.toggle_btn {
+  width: 30px;
+  height: 30px;
+  z-index: 20;
+  position: relative;
+}
+
+.toggle_btn span {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  top: 18px;
+  transition: all 0.5s;
+  background-color: #333;
+  border-radius: 4px;
+  display: block;
+}
+
+
+
+.open .toggle_btn span {
+  background-color: white;
+  transition: all 0.5s;
+}
+
+/*高さ30のうち、上から10センチ引く*/
+.toggle_btn span:nth-child(1) {
+  top: 10px;
+}
+
+/*高さ30のうち、上から10センチ引く*/
+.toggle_btn span:nth-child(2) {
+  bottom: 10px;
+}
+
+.open .toggle_btn span:nth-child(1) {
+  -webkit-transform: translateY(4px) rotate(-45deg);
+  transform: translateY(4px) rotate(-45deg);
+}
+
+.open .toggle_btn span:nth-child(2) {
+  -webkit-transform: translateY(-4px) rotate(45deg);
+  transform: translateY(-4px) rotate(45deg);
+}
+
+#mask {
+  display: none;
+}
+
+.open #mask {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+}
+
+
+
+/*メイン部分*/
+
+.flex-wrap {
+  text-align: center;
+  padding: 0 0 270px 0;
+}
+
+.matome {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.parts {
+  width: 23%;
+  margin-bottom: 40px;
+}
+
+.parts img {
+  width: 100%;
+}
+
+.parts a:hover {
+  opacity: 0.6;
+  transition: all 0.5s;
+}
+
+.parts p {
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.view {
+  font-size: 12px;
+}
+
+.view:hover {
+  opacity: 0.6;
+}
+
+
+/*フッター部分*/
+
+.introduce {
+  display: flex;
+  font-size: 12px;
+}
+
+.introduce a:hover {
+  opacity: 0.7;
+}
+
+.introduce li {
+  margin: 0 10px;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  font-size: 8px;
+  width: 120px;
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+}
+
+.sign {
+  margin: 0 20px;
+  font-size: 12px;
+}
+
+@media (max-width:900px) {
+
+  /*メイン部分*/
+  .parts {
+    width: 47%;
   }
-  
-  a{
-    text-decoration: none;
-    color:#333;
+
+  .wrapper {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .footer-flex {
     display: block;
+    margin-bottom: 20px;
   }
-  
-  .wrapper{
-    max-width:1360px;
-    padding:0 40px;
-    margin:0 auto;
+
+  .copyright {
+    margin-top: 15px;
   }
-  
-  
-  
-  /*ヘッダー部分*/
-  
-    .site-title{
-      margin-left:10px;
-    }  
 
-    #header {
-      height: 80px;
-      background-color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+  .pages {
+    margin: 30px 0 100px 0;
 
-    
-    .product{
-      margin:30px 0 30px 0;
-      font-size:14px;
-    }
+  }
 
-    /*ハンバーガーメニュー*/
-
-    #navi{
-      position:absolute;
-      top:0;
-      padding:36px 60px;
-      transition:all 0.5s;
-      left:-300px;
-      color:white;
-      opacity:0;
-      z-index:20;
-    }
-
-    .open #navi{
-      left:0;
-      opacity:1;
-    }
-
-
-    #navi a{
-      color:white;
-    }
-
-    .open #navi{
-      left:0;
-      opacity:1;
-    }
-
-    #navi li{
-      margin-bottom:14px;
-      font-size:14px;
-    }
-
-
-    /*ハンバーガーの線*/
-
-    .toggle_btn{
-      width:30px;
-      height:30px;
-      z-index:20;
-      position:relative;
-    }
-
-    .toggle_btn span{
-      width:30px;
-      height:2px;
-      position:absolute;
-      background-color:#333;
-    }
-
-
-
-    .open .toggle_btn span{
-      background-color:white;
-      transition:all 0.5s;
-    } 
-
-    /*高さ30のうち、上から10センチ引く*/
-    .toggle_btn span:nth-child(1){
-      top:10px;
-    }
-
-    /*高さ30のうち、上から10センチ引く*/
-    .toggle_btn span:nth-child(2){
-      bottom:10px;
-    }
-
-    .open .toggle_btn span:nth-child(1) {
-      -webkit-transform: translateY(4px) rotate(-45deg);
-      transform: translateY(4px) rotate(-45deg);
-    }
-
-    .open .toggle_btn span:nth-child(2) {
-      -webkit-transform: translateY(-4px) rotate(45deg);
-      transform: translateY(-4px) rotate(45deg);
-    }
-
-    #mask{
-      display: none;
-    }
-
-    .open #mask{
-      display:block;
-      position:fixed;
-      width:100%;
-      height:100%;
-      background:#000;
-      opacity:0.6;
-      top:0;
-      left:0;
-    }
-
-
-  
-    /*メイン部分*/
-  
-    .flex-wrap{
-      text-align: center;
-      padding:0  0 270px 0;
-    }
-  
-    .matome{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content:space-between;
-    }
-  
-    .parts{
-      width:23%;
-      margin-bottom:40px;
-    }
-  
-    .parts img{
-      width:100%;
-    }
-  
-    .parts a:hover{
-      opacity:0.6;
-      transition:all 0.5s;
-    }
-  
-    .parts p{
-      font-size:12px;
-      margin-top:10px;
-      text-align: left;
-    }
-  
-    .view{
-      font-size:12px;
-    }
-  
-    .view:hover{
-      opacity:0.6;
-    }
-  
-  
-  /*フッター部分*/
-
-    .introduce{
-      display: flex;
-      font-size:12px;
-    }
-  
-    .introduce a:hover{
-      opacity:0.7;
-    }
-  
-    .introduce li{
-      margin:0 10px;
-    }
-  
-    .footer-flex{
-      display:flex;
-      justify-content:space-between;
-    }
-    
-    .copyright{
-      font-size:8px;
-      width:120px;
-    }
-
-    .pages{
-      display:flex;
-      justify-content:center;
-    }
-
-    .sign{
-      margin:0 20px;
-      font-size:12px;
-    }
-
-    @media (max-width:900px){
-
-      /*メイン部分*/
-      .parts{
-        width:47%;
-      }
-    
-      .wrapper{
-        max-width:900px;
-        width:90%;
-        margin:0 auto;
-        padding:0 40px;
-      }
-    
-      .footer-flex{
-        display:block;
-        margin-bottom:20px;
-      }
-      
-      .copyright{
-        margin-top:15px;
-      }
-
-      .pages{
-        margin:30px 0 100px 0;
-  
-        }
-    
-    }
+}
