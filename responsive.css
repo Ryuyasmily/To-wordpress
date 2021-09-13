@@ -32,10 +32,6 @@
 }
 
 @media (max-width:570px) {
-  .wrapper {
-    width: 80%;
-  }
-
 
   .flex {
     display: block;
